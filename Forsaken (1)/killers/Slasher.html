@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forsaken Lab 🥀</title>
+    <link rel="shortcut icon" href="./artworks-xiwUP9ZrWIikt8O5-1qfImw-t1080x1080.jpg">
+    <link rel="stylesheet" href="Slasher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo" style="text-decoration: none;">
+                <h2 class="logo-text">Forsaken Lab 🥀</h2>
+            </a>
+                <ul class="nav" style="list-style: none;">
+                    <button style="background: none; border: none;" id="menu-close-button" class="fas fa-times"></button>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../survivors/survivors.html" class="nav-link">Survivor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../killers/killer.html" class="nav-link">Killer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../map.html" class="nav-link">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../lore.html" class="nav-link">Lore</a>
+                    </li>
+                </ul>
+                <button style="background: none; border: none; color:white" id="menu-open-button" class="fas fa-bars"> </button>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <img class="killer" alt="killer" src="../image/Slasherimg.webp">
+            <div class="info">
+                <div class="ititle"><p>Stats</p></div>
+                <div class="info1">
+                    <div class="i1">
+                        <p>Difficulty:</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="i2">
+                        <p>Health:</p>
+                        <p>1250</p>
+                    </div>
+                </div>
+                <div class="info2">
+                    <div class="i1">
+                        <p>Sprint:</p>
+                        <p>28</p>
+                    </div>
+                    <div class="i2">
+                        <p>Stamina:</p>
+                        <p>110</p>
+                    </div>
+                </div>
+                <div class="info3">
+                    <div class="i1">
+                        <p>Loss/sec:</p>
+                        <p>9.5</p>
+                    </div>
+                    <div class="i2">
+                        <p>Gain/sec:</p>
+                        <p>21</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="abilities">
+            <h1>Abilities</h1>
+            <div class="main-ability">
+                <div class="slash">
+                    <img alt="slash" src="../image/SlasherSlash.webp">
+                    <div class="description">
+                        <h2>SLASH</h2>
+                        <b>Cooldown: 1.9s</b>
+                        <p>Slasher performs a basic slash with his machete. The effects are as follows:<br>
+                            <ul>
+                                <li>Damage: 20</li>
+                                <li>Inflicts Bleeding I for 5 seconds (totaling ~28 damage over time).</li>
+                                <li>If used while ENRAGED, Slasher lunges 19 studs forward and the damage increases to 25 (31 With status effect).</li>
+                                <li>Can hit multiple survivors at once.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="ability1">
+                    <img alt="BEHEAD" src="../image/SlasherBehead.webp">
+                    <div class="description">
+                        <h2>BEHEAD</h2>
+                        <b>Cooldown: 18.5s (12s if used while ENRAGED)</b>
+                        <p>Slasher winds up a heavy horizontal swing aimed at the target's head. The effects are as follows:<br>
+                            <ul>
+                                <li>If the player is moving, Slasher will lunge forward in the direction they are facing.</li>
+                                <li>Deals 20 damage and inflicts Helpless I for 8s.</li>
+                                <li>Damage increases to 35 if ENRAGED.</li>
+                                <li>Regardless of whether the swing lands, Slasher is inflicted with Slowness I for 2s.</li>
+                                <li>Can hit all survivors within the hitbox.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="ability2">
+                    <img alt="GASHING WOUND" src="../image/SlasherGashingWound.webp">
+                    <div class="description">
+                        <h2>GASHING WOUND</h2>
+                        <b>Cooldown: 32s (24s if used while ENRAGED)</b>
+                        <p>Slasher slices forward and unleashes a relentless chain of attacks with his machete and chainsaw. The effects are as follows:<br>
+                            <ul>
+                                <li>Begins with two machete strikes, each dealing about 20% of the total damage.</li>
+                                <li>Follows with a chainsaw stab, dealing about 10% of the total damage.</li>
+                                <li>Finishes by kicking the survivor to the ground, causing a brief ragdoll effect.</li>
+                                <li>Default total damage is 50, but if ENRAGED, damage is increased to 70.</li>
+                                <li>Can strike multiple survivors within the hitbox.</li>
+                                <li>Suffers from long endlag if the attack fails.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="ability3">
+                    <img alt="RAGING PACE" src="../image/RagingPaceSlasher.webp">
+                    <div class="description">
+                        <h2>RAGING PACE</h2>
+                        <b>Cooldown: 30s</b>
+                        <p>Upon activation, Slasher enters his ENRAGED state. The effects are as follows:</p>
+                            <ul>
+                                <li>Speed becomes 19 for 14 seconds.</li>
+                                <li>The aura of the nearest survivor is revealed until ENRAGED ends, lingering for an additional 2s afterward.</li>
+                                <li>Slasher cannot get Stunned.</li>
+                                <li>Sprinting is disabled.</li>
+                                <li>Stamina gradually caps at 70 over 6.5s. (Cap is removed once ENRAGED ends.)</li>
+                                <li>If Slasher uses Slash or Behead while ENRAGED, they lunge 19 studs forward in the direction they are facing.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">© 2025 Forsaken Lab</p>
+            <div class="social-link-list">
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy policy</a>
+                <span class="separator">•</span>
+                <a href="#" class="policy-link">Refund policy</a>
+            </p>
+        </div>
+    </footer>
+    <script type="module" src="./Slasher.js"></script>
+</body>
+</html>
